@@ -1,28 +1,32 @@
-# DQL Navigator - A RL based race car simulator
-https://prezi.com/p/edit/fuouykm4zmyg/
+# **DQL-Navigator – Reinforcement Learning Race Car Simulator**
+[https://prezi.com/p/edit/fuouykm4zmyg/](https://prezi.com/view/QArtwAtCwH5BxmTu6jHg/?referral_token=EpVnqflnB3FN)
 
-Our project entails taking a 2D car racing basic environment from Gymnasium and investigating the performance of two RL algorithms; tabular Q-learning and DQN. The objective is to train autonomous agents capable of navigating tracks with varying complexities, by learning optimal driving, pathfinding and general policies through trial and error. We first implement Q-learning using discretized states spaces then extend to DQN using convolutional neural networks to handle high dimensional visual input. 
+DQL-Navigator explores how autonomous agents learn to drive in the **Gymnasium CarRacing-v3** environment. We evaluate two reinforcement learning approaches—**Tabular Q-Learning** and **Deep Q-Networks (DQN)**—to understand how agents learn optimal navigation, control, and decision-making strategies through trial and error.  
+We begin with a discretized Q-Learning agent, then scale to a CNN-based DQN capable of handling high-dimensional visual input.
 
-## Features
+---
 
+## **Features**
 - **Gymnasium CarRacing-v3 Environment**  
-  A 2D continuous-control racing environment, now discretized and optimized for reinforcement learning.
-  
+  Continuous-control 2D racing environment adapted and optimized for RL experimentation.
+
 - **Tabular Q-Learning Agent**  
-  Implements a classical Q-learning agent with state discretization and epsilon-greedy exploration.
+  Classical Q-Learning with state discretization and epsilon-greedy exploration.
 
 - **DQN Agent**  
-  Deep Q-Network that uses a CNN to process pixel observations, with experience replay and target network updates.
+  CNN-based Deep Q-Network with experience replay and target network stabilization.
 
 - **Training Analytics**  
-  Plotting and logging of training reward, episode length, and exploration rate.
+  Logging and plotting of reward trends, episode length, and epsilon decay.
 
 - **Model Saving & Evaluation**  
-  Q-tables and DQN model checkpoints can be saved and reloaded for evaluation or continued training.
-## Output
+  Save and reload Q-tables and DQN checkpoints for continued training or evaluation.
 
-### Results of Training
+---
 
+## **Output**
+
+### **Training Progress**
 <p align="center" style="font-size: 20px; font-weight: bold;">
   FROM RANDOM ACTIONS  
   ⟶  
@@ -35,14 +39,15 @@ Our project entails taking a 2D car racing basic environment from Gymnasium and 
   <img src="resources/1.gif" width="350" />
 </p>
 
+---
 
-##  Setup Instructions
+## **Setup Instructions**
 
-1. **Clone the repository**  
-   ```bash
-   git clone https://github.com/PranavViswanathan/FAI-Project.git
-   cd FAI-Project
-   ```
+1. **Clone the repository**
+  ```bash
+  git clone https://github.com/gyuszix/DQL-Navigator.git
+  cd DQL-Navigator
+  ```
 
 2. **Create a virtual environment**
    ```bash
@@ -111,8 +116,8 @@ Run the DQN training:
 ```bash
 python DQN/main.py
 ```
-### 3. Visulaizing the results
-To visulize the model run the test policy file in each folder, for example:
+### 3. Visualizing the results
+To visualize the model run the test policy file in each folder, for example:
 ```bash
 python Q_Learning/test_policy.py
 
