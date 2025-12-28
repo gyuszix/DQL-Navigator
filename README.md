@@ -1,4 +1,4 @@
-# NeuroPilot - A RL based race car simulator
+# DQL Navigator - A RL based race car simulator
 https://prezi.com/p/edit/fuouykm4zmyg/
 
 Our project entails taking a 2D car racing basic environment from Gymnasium and investigating the performance of two RL algorithms; tabular Q-learning and DQN. The objective is to train autonomous agents capable of navigating tracks with varying complexities, by learning optimal driving, pathfinding and general policies through trial and error. We first implement Q-learning using discretized states spaces then extend to DQN using convolutional neural networks to handle high dimensional visual input. 
